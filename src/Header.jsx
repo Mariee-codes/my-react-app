@@ -1,4 +1,5 @@
-import chefClaudeLogo from "./images/Chef Claude.png"
+import chefClaudeLogo from "/ChefClaude.png";
+
 export default function Header () {
     return (
         <header>

@@ -82,4 +82,5 @@ header {
   align-items: center;
   gap:  11px;
   background-color: red;
+  height: 80px;
 }
