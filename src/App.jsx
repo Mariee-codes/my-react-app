@@ -1,5 +1,6 @@
-import react from "react"
+import react from "react";
 import Header from "./Header";
+import './index.css'
 
 export default function App() {
   return (
