@@ -5,11 +5,16 @@ function App() {
     function handleClick() {
         console.log("i was clicked!")
     }
+
+    function handleMouseOver() {
+        console.log("I was hovered!")
+    }
     return (
         <main className='container'>
             <img 
-            src =""
-            alt=""
+            src ="public/images/chef-claude.png"
+            alt="chef claude image"
+            onMouseOver={handleMouseOver}
             />
             <button onClick= {handleClick}>Click me</button>
         </main>
