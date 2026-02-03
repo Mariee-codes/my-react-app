@@ -10,6 +10,16 @@
 // )
 
 export default function Main() {
+  const ingredients = ["Chicken","Oregano","Tomatoes"]
+
+  /* review challenge
+    map over the list of ingredients and render them as list items
+    */
+
+    const ingredientsListItems = ingredients.map(ingredient => (
+      <li key = {ingredient}>{ingredient}</li>
+    ))
+      
   return (
 
 
@@ -25,8 +35,10 @@ export default function Main() {
     <button>
       Add ingredient
     </button>
-    
+     </form>
 
-  </form>
+     <ul>
+        {ingredientsListItems}
+     </ul>
 </main>
   )}
