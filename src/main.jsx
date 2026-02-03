@@ -20,17 +20,23 @@ export default function Main() {
       <li key = {ingredient}>{ingredient}</li>
     ))
       
+  function handleSubmit(event) {
+    event.preventDefault()
+    console.log("Form Submitted!")
+  }
   return (
 
 
 <main>
-  <form  className="add-ingredient-form">
+  <form onSubmit= {handleSubmit} className="add-ingredient-form">
     <input  
 
     type = "text"
     placeholder="e.g. oregano"
-    aria-label="Add ingredient
-    "/>
+    aria-label="Add ingredient"
+    name= "ingredient"
+    
+    />
 
     <button>
       Add ingredient
